@@ -21,7 +21,7 @@ const get = (key) => {
     }
 }
 
-const set = async (key, data, expirationTimeInMinutes = defaultExpirationTimeInMinutes) => {
+const set = (key, data, expirationTimeInMinutes = defaultExpirationTimeInMinutes) => {
     try {
         const expirationTimeLimit = getExpirationTime(expirationTimeInMinutes); 
 
